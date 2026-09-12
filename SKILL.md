@@ -196,14 +196,18 @@ Read `references/FollowCard.tsx` for the exact implementation.
 **NEVER trigger cloud rendering without user approval.**
 
 Before rendering:
-1. Extract 3 representative still frames using Remotion CLI or FFmpeg:
+1. Ensure the Remotion Studio preview server is running on port 3000 (`http://localhost:3000`). If not already active:
+   ```bash
+   npx remotion preview src/index.ts --port=3000
+   ```
+2. The user reviews and scrubs through the composition directly on the Remotion Studio Dashboard (`http://localhost:3000`).
+3. (Optional) Extract 3 still frames via Remotion CLI for rapid visual reference:
    - **Frame 1 (Intro Hook)**: Frame 30–60 (Speaker introduction & first caption)
    - **Frame 2 (Motion Graphic / Mid-Reel)**: Frame ~700 (Hero card and caption highlight)
    - **Frame 3 (Outro / Follow Card)**: Frame ~1350 (Follow card on top-right & closing CTA)
-2. Present the still frame paths to the user or provide local preview (`http://localhost:4000`).
-3. Ask the user for confirmation:
-   > *"Preview frames are generated and verified. Would you like me to trigger the cloud render now?"*
-4. **Proceed to Phase 7 ONLY after receiving user approval.**
+4. Ask the user for confirmation:
+   > *"Remotion Studio preview is active at http://localhost:3000. Please verify the composition on the dashboard. Would you like me to trigger the cloud render now?"*
+5. **Proceed to Phase 7 ONLY after receiving user approval.**
 
 ---
 
