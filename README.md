@@ -1,4 +1,4 @@
-﻿# Remotion Reel Polish (`remotion-reel-polish`)
+# Remotion Reel Polish (`remotion-reel-polish`)
 
 [![Agent Skill](https://img.shields.io/badge/Agent%20Skill-Remotion%20Reel%20Polish-blueviolet?style=flat-square)](https://github.com/eren-998/remotion-reel-polish)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
@@ -86,6 +86,8 @@ Input Video (.mp4)
 remotion-reel-polish/
 ├── SKILL.md                          # Full agent execution skill instructions
 ├── .env.example                      # Template for API keys
+├── scripts/
+│   └── render_cloud.py               # Automated GitHub Actions cloud render & download script
 ├── references/
 │   ├── Composition-template.tsx      # Main Remotion composition layout
 │   ├── MinimalCaptions.tsx           # Glass pill subtitle component
